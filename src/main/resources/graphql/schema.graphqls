@@ -1,0 +1,26 @@
+type Query{
+findEmployee(id:Int):Employee
+saveEmp(employee:EmployeeRecord):Employee
+}
+
+type Mutation{
+saveEmployee(employee:EmployeeRecord):Employee
+deleteEmployee(id:Int):String
+}
+
+
+type Employee{
+id:ID
+name:String
+deptId:Int
+mobile:Int
+address:String
+}
+
+input EmployeeRecord{
+id:Int
+name:String
+deptId:Int
+mobile:Int
+address:String
+}
